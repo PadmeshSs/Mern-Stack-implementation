@@ -83,6 +83,8 @@ Frontend runs on: http://localhost:3000
 
 > Important: Make sure MongoDB is running locally before starting the server.
 
+---
+ 
 ##  Challenges & Learnings
 
 - **Implemented bcrypt** for secure password hashing  
