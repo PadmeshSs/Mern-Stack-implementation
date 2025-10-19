@@ -32,6 +32,20 @@ A **MERN stack application** that allows users to **register** and **log in** se
 
 ---
 
+## Project Structure 
+
+- **React-app/**
+  - **src/**
+    - **components/** → Reusable UI components (Login, Signup, etc.)
+    - **App.js** → Root React component
+
+- **server/**
+  - **models/** → Mongoose schemas (user.js)
+  - **hash.js** → Password hashing and comparison functions
+  - **server.js** → Express server with login & register routes
+
+---
+
 ## Installation & Setup
 ### Prerequisites
 
