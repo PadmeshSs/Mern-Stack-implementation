@@ -2,7 +2,6 @@
     color: white;
 }
 
-
 .navlink:hover{
     color:  rgb(165, 102, 7);
     transition: all .5s;
@@ -11,10 +10,6 @@
 .navbar-toggler.collapsed{
     border: none;
     box-shadow: none;
-}
-
-.in{
-    width: 75px;
 }
 
 .navbar-toggler.collapsed:active, .navbar-toggler:focus{
