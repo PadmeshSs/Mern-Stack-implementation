@@ -1,0 +1,136 @@
+.navlink{
+    color: white;
+}
+
+
+.navlink:hover{
+    color:  rgb(165, 102, 7);
+    transition: all .5s;
+}
+
+.navbar-toggler.collapsed{
+    border: none;
+    box-shadow: none;
+}
+
+.in{
+    width: 75px;
+}
+
+.navbar-toggler.collapsed:active, .navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.scroll{
+    bottom: 5%;
+    right: 0;
+    width: auto;
+}
+
+.offcanvas{
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 25px );
+    border-radius: 10px;
+}
+
+.hero{
+    min-height: 100vh;
+}
+
+.offcanvas.show .signin{
+    margin-top: 10px;
+}
+
+
+.header{
+    height: 100px;
+}
+
+
+.hero-heading{
+    font-size: 80px;
+}
+
+.slogan{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#Nav .navlink.active{
+    color: white;
+}
+
+i{
+    color: white;
+}
+
+.btn-close{
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff' %3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon{
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220%200%2030%2030%22%3E%3Cpath stroke%3D%22rgba%28165%2C%20102%2C%207%2C%200.7%29%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22 d%3D%22M4%207h22M4%2015h22M4%2023h22%22%2F%3E%3C%2Fsvg%3E');
+}
+
+
+/* Extra small (xs) - Below 576px */
+@media (max-width: 575.98px){
+    .hero-section{
+        margin-top: 10rem;
+    }
+
+    .hero-heading{
+        font-size: 15vw;
+    }
+
+    .order{
+        margin-top: 1rem;
+    }
+
+    .cost{
+        margin-top: 1rem;
+    }
+}
+  
+/* Small (sm) - 576px and up */
+@media (min-width: 576px) and (max-width: 767px){
+    .signin{
+        font-size: 12px;
+    }
+    .hero-section{
+        margin-top: 10rem;
+    }
+}
+  
+/* Medium (md) - 768px and up */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section{
+        margin-top: 10rem;
+    }
+
+    .hero-img{
+        width: 500px;
+    }
+    
+}
+  
+/* Large (lg) - 992px and up */
+@media (min-width: 992px) and (max-width: 1199px){
+    .hero-heading{
+        font-size: 68px;
+    }
+}
+  
+/* Extra large (xl) - 1200px and up */
+@media (min-width: 1200px) and (max-width: 1399px){
+    /* Styles for extra large devices */
+}
+  
+/* Extra extra large (xxl) - 1400px and up */
+@media (min-width: 1400px) {
+    /* Styles for extra extra large devices */
+}
+
+

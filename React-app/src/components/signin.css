@@ -1,0 +1,194 @@
+.signin-container{
+    min-height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    padding: 30PX;
+    position: absolute;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    height: 500px;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.title::after{
+    content: '';
+    position: absolute;
+    background-color: #a56607;
+    width: 25px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+}
+
+.logincont, .signupcont{
+    top: 0;
+    height: 100%;
+    padding: 40px 0;
+    transition: all .6s ease-in-out;
+    background-color: #fff;
+}
+
+.logincont{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.signupcont{
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.login{
+    width: 100%;
+}
+
+.responsetext{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.cover.left + .logincont{
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.cover.left ~ .signupcont{
+    animation: index1 0.6s;
+    opacity: 1;
+    z-index: 5;
+    transform: translateX(100%);
+}
+
+.errortxt-1, .errortxt-2{
+    font-weight: 500;
+    width: 100%;
+}
+
+.green{
+    color: green;
+    background-color: rgb(220 255 220);
+}
+
+.red{
+    color: maroon;
+    background-color: rgb(255, 220, 220);
+}
+
+.grey{
+    color: grey;
+    background-color: rgb(227, 227, 227);
+}
+
+@keyframes index-1{
+    0%, 69.99%{
+        z-index: 1;
+        opacity: 0;
+    }
+
+    70%,100%{
+        z-index: 5;
+        opacity: 1;
+    }
+}
+
+.signup{
+    width: 100%;
+}
+
+.boxes i{
+    font-size: 20px;
+    color: #a56607;
+}
+
+input{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.login, .signup{
+    padding: 0 30px;
+    left: 0;
+}
+
+.box{
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    transition: all .5s;
+}
+
+.box:hover, .box:focus{
+    border-bottom: 2px solid #a56607;
+}
+
+.boxes button{
+    margin-top: 50px;
+}
+
+.ask{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signup button{
+    margin-top: 25px;
+}
+
+.cover{
+    height: 100%;
+    width: 50%;
+    background-color: #333;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+}
+
+.left{
+    transform: translateX(-100%);
+}
+
+@media (max-width: 768px){
+    .cover{
+        display: none !important;
+    }
+
+    .wrapper .cover.left  ~ .signupcont, .wrapper .cover + .logincont{
+        width: 100%;
+        transition: none;
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    .wrapper .cover.left + .logincont{
+        opacity: 0;
+    }
+
+    .wrapper .signupcont{
+        opacity: 0;
+        width: 100%;
+        animation: none;
+        transition: none;
+    }
+}
